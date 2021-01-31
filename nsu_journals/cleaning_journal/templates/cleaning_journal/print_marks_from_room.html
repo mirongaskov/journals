@@ -1,0 +1,10 @@
+<head>
+	<title>ROOM'S MARKS</title>
+</head>
+<form action="" method="POST">
+	{% csrf_token %}
+	<h1>ОЦЕНКИ</h1>
+    {%for mark in marks%}
+        <h3>{{ mark }}</h3>
+    {% endfor %}
+</form>

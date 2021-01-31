@@ -1,0 +1,14 @@
+<head>
+	<title>REGISTRATION</title>
+</head>
+<form action="" method="post">
+	{% csrf_token %}
+	<h1>РЕГИСТРАЦИЯ</h1>
+	<p>E-MAIL:</p>
+	<p><input type="text" name="email" autocomplete="off" /></p>
+	<p>Password:</p>
+    <p><input type="password" name="password" /></p>
+	<p><input type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ"/></p>
+	<p>{{ message }}</p>
+    <a href="/authorization/login">Я уже зарегистрирован</a>
+</form>

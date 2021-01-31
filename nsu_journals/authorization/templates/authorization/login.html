@@ -1,0 +1,14 @@
+<head>
+	<title>LOGIN</title>
+</head>
+<form action="" method="POST">
+	{% csrf_token %}
+	<h1>ВХОД В СИСТЕМУ</h1>
+	<p>E-MAIL:</p>
+	<p><input type="text" name="email" autocomplete="off" /></p>
+	<p>Password:</p>
+    <p><input type="password" name="password" /></p>
+	<p><input type="submit" value="ВОЙТИ"/></p>
+	<p>{{ message }}</p>
+    <a href="/authorization/registration">Я еще не зарегистрирован</a>
+</form>
